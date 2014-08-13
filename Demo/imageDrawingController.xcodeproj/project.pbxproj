@@ -21,6 +21,11 @@
 		628F673B19990F3800E8FD7C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 628F671D19990F3800E8FD7C /* UIKit.framework */; };
 		628F674319990F3800E8FD7C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 628F674119990F3800E8FD7C /* InfoPlist.strings */; };
 		628F674519990F3800E8FD7C /* imageDrawingControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 628F674419990F3800E8FD7C /* imageDrawingControllerTests.m */; };
+		628F6754199921C500E8FD7C /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 628F6753199921C500E8FD7C /* AssetsLibrary.framework */; };
+		628F67591999401800E8FD7C /* Backgroundimage.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 628F67571999401800E8FD7C /* Backgroundimage.jpeg */; };
+		628F675A1999401800E8FD7C /* sampleImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 628F67581999401800E8FD7C /* sampleImage.jpg */; };
+		628F675F199940E800E8FD7C /* imageDrawingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 628F675E199940E800E8FD7C /* imageDrawingController.m */; };
+		628F6CD6199BDF5C00268456 /* customDrawingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 628F6CD5199BDF5C00268456 /* customDrawingView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,13 @@
 		628F674019990F3800E8FD7C /* imageDrawingControllerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "imageDrawingControllerTests-Info.plist"; sourceTree = "<group>"; };
 		628F674219990F3800E8FD7C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		628F674419990F3800E8FD7C /* imageDrawingControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = imageDrawingControllerTests.m; sourceTree = "<group>"; };
+		628F6753199921C500E8FD7C /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		628F67571999401800E8FD7C /* Backgroundimage.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Backgroundimage.jpeg; path = images/Backgroundimage.jpeg; sourceTree = "<group>"; };
+		628F67581999401800E8FD7C /* sampleImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = sampleImage.jpg; path = images/sampleImage.jpg; sourceTree = "<group>"; };
+		628F675D199940E800E8FD7C /* imageDrawingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = imageDrawingController.h; path = Lib/imageDrawingController.h; sourceTree = "<group>"; };
+		628F675E199940E800E8FD7C /* imageDrawingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = imageDrawingController.m; path = Lib/imageDrawingController.m; sourceTree = "<group>"; };
+		628F6CD4199BDF5C00268456 /* customDrawingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = customDrawingView.h; sourceTree = "<group>"; };
+		628F6CD5199BDF5C00268456 /* customDrawingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = customDrawingView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				628F6754199921C500E8FD7C /* AssetsLibrary.framework in Frameworks */,
 				628F671C19990F3800E8FD7C /* CoreGraphics.framework in Frameworks */,
 				628F671E19990F3800E8FD7C /* UIKit.framework in Frameworks */,
 				628F671A19990F3800E8FD7C /* Foundation.framework in Frameworks */,
@@ -101,6 +114,7 @@
 		628F671819990F3800E8FD7C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				628F6753199921C500E8FD7C /* AssetsLibrary.framework */,
 				628F671919990F3800E8FD7C /* Foundation.framework */,
 				628F671B19990F3800E8FD7C /* CoreGraphics.framework */,
 				628F671D19990F3800E8FD7C /* UIKit.framework */,
@@ -117,8 +131,10 @@
 				628F672B19990F3800E8FD7C /* Main.storyboard */,
 				628F672E19990F3800E8FD7C /* ViewController.h */,
 				628F672F19990F3800E8FD7C /* ViewController.m */,
+				628F675C1999404800E8FD7C /* Lib */,
 				628F673119990F3800E8FD7C /* Images.xcassets */,
 				628F672019990F3800E8FD7C /* Supporting Files */,
+				628F675B1999401F00E8FD7C /* Images */,
 			);
 			path = imageDrawingController;
 			sourceTree = "<group>";
@@ -150,6 +166,26 @@
 				628F674119990F3800E8FD7C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		628F675B1999401F00E8FD7C /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				628F67581999401800E8FD7C /* sampleImage.jpg */,
+				628F67571999401800E8FD7C /* Backgroundimage.jpeg */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		628F675C1999404800E8FD7C /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				628F6CD4199BDF5C00268456 /* customDrawingView.h */,
+				628F6CD5199BDF5C00268456 /* customDrawingView.m */,
+				628F675D199940E800E8FD7C /* imageDrawingController.h */,
+				628F675E199940E800E8FD7C /* imageDrawingController.m */,
+			);
+			name = Lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +267,8 @@
 				628F673219990F3800E8FD7C /* Images.xcassets in Resources */,
 				628F672419990F3800E8FD7C /* InfoPlist.strings in Resources */,
 				628F672D19990F3800E8FD7C /* Main.storyboard in Resources */,
+				628F67591999401800E8FD7C /* Backgroundimage.jpeg in Resources */,
+				628F675A1999401800E8FD7C /* sampleImage.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +289,8 @@
 			files = (
 				628F673019990F3800E8FD7C /* ViewController.m in Sources */,
 				628F672A19990F3800E8FD7C /* AppDelegate.m in Sources */,
+				628F675F199940E800E8FD7C /* imageDrawingController.m in Sources */,
+				628F6CD6199BDF5C00268456 /* customDrawingView.m in Sources */,
 				628F672619990F3800E8FD7C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -376,9 +416,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "imageDrawingController/imageDrawingController-Prefix.pch";
 				INFOPLIST_FILE = "imageDrawingController/imageDrawingController-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -389,9 +434,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "imageDrawingController/imageDrawingController-Prefix.pch";
 				INFOPLIST_FILE = "imageDrawingController/imageDrawingController-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -456,6 +506,7 @@
 				628F674A19990F3800E8FD7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		628F674B19990F3800E8FD7C /* Build configuration list for PBXNativeTarget "imageDrawingControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +515,7 @@
 				628F674D19990F3800E8FD7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
